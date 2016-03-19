@@ -1,0 +1,11 @@
+{{!-- app/templates/teams.hbs --}}
+
+<ul>
+  {{#each model as |team|}}
+    <li>
+      <strong>{{team.name}}</strong><br><br>
+      <em>Plays in</em>
+      {{team.league.name}} ({{team.league.alias}})
+    </li>
+  {{/each}}
+</ul>
